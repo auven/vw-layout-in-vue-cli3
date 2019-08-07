@@ -16,10 +16,6 @@ module.exports = {
       minPixelValue: 1, // 小于或等于`1px`不转换为视窗单位，你也可以设置为你想要的值
       mediaQuery: false // 允许在媒体查询中转换`px`
     },
-    "postcss-viewport-units": {
-      // vw适配中使用伪类选择器遇到的问题 https://blog.csdn.net/perryliu6/article/details/80965734
-      filterRule: rule => rule.selector.indexOf('::after') === -1 && rule.selector.indexOf('::before') === -1 && rule.selector.indexOf(':after') === -1 && rule.selector.indexOf(':before') === -1
-    },
     "cssnano": {
       preset: "advanced",
       autoprefixer: false,

@@ -33,4 +33,11 @@ export default {
   margin: auto;
   background: #7c7c7c;
 }
+.box::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: red;
+}
 </style>
