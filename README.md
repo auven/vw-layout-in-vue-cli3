@@ -21,3 +21,7 @@ npm run build
 ```
 npm run lint
 ```
+
+### 注意
+
+cssnano 必须是 `3.10.0`，`reduceIdents: false` 才能生效
